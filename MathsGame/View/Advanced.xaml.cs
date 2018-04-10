@@ -26,7 +26,7 @@ namespace MathsGame.View
     public sealed partial class Advanced : Page
     {
         private Random randomNum = new Random();
-        private int Score = 0, highScore = 1, staticNumA, staticNumB, staticResult;
+        private int Score = 0, highScore = 1, staticNumA, staticNumB, staticResult, state = 1;
         private DispatcherTimer dispatcherTimer;
 
         private void SetupProgressBar()
@@ -63,25 +63,26 @@ namespace MathsGame.View
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= PlayAdvanced_BackRequested;
-        }
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PlayAdvanced_BackRequested;
             highScore = int.Parse(SimpleMaths.Maths.LoadSettings("HighScore"));
             txtHighScore.Text = String.Format("Highscore:(0)", highScore);
             dispatcherTimer = null;
             Playing();
         }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= PlayAdvanced_BackRequested;
+            
+        }
 
         private int randomValue()
         {
-            return randomValue.Next(0,3);
+            return randomNum.Next(0,3);
         }
 
         private void Playing()
         {
-            int numberA = randomNum();
+            int numberA = randomValue();
             int numberB = randomNum(0, numberA - 1);
             int value = randomValue();
             int result = -1;
