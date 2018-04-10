@@ -373,33 +373,6 @@
     <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\bin\x86\Debug\MathsGame.xr.xml">
       <PackagePath>MathsGame.xr.xml</PackagePath>
     </AppxPackagedFile>

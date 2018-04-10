@@ -25,7 +25,6 @@ c:\users\niall\source\repos\MathsGame\MathsGame\obj\x86\Debug\View\GameOver.g.i.
 c:\users\niall\source\repos\MathsGame\MathsGame\obj\x86\Debug\View\GameOver.g.cs
 c:\users\niall\source\repos\MathsGame\MathsGame\obj\x86\Debug\View\GameOver.xaml
 c:\users\niall\source\repos\MathsGame\MathsGame\obj\x86\Debug\View\GameOver.xbf
-C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\MathsGame.csprojResolveAssemblyReference.cache
 C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\App.g.i.cs
 C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\App.g.cs
 C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\View\GameOver.g.i.cs

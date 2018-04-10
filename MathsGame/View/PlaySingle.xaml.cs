@@ -24,7 +24,7 @@ namespace MathsGame.View
 
     public sealed partial class PlaySingle : Page
     {
-        private int staticNumA, staticNumB, staticResult, staticRandomResult, Score = 0, State = 1, BestScore = 0, mode;
+        private int staticNumA, staticNumB, staticResult, staticRandomResult, Score = 0, State = 1, mode;
         private DispatcherTimer dispatcherTimer;
 
         private void setupProgressBar()
