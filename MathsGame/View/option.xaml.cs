@@ -78,5 +78,9 @@ namespace MathsGame.View
             SimpleMaths.Maths.speed = int.Parse(slider.Value.ToString()) * 10;
             SimpleMaths.Maths.SaveSettings("Speed", SimpleMaths.Maths.speed.ToString());
         }
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
     }
 }

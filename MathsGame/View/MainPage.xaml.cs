@@ -32,18 +32,19 @@ namespace MathsGame
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= MainPage_BackRequested;
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += MainPage_BackRequested;
+            SimpleMaths.Maths.mode = int.Parse(SimpleMaths.Maths.LoadSettings("Mode").ToString());
+
+            txtHighscore.Text = "High Score: " + SimpleMaths.Maths.LoadSettings("Highscore").ToString();
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += MainPage_BackRequested;
-            SimpleMaths.Maths.mode = int.Parse(SimpleMaths.Maths.LoadSettings("Mode").ToString());
-
-            textHighScore.Text = "High Score: " + SimpleMaths.Maths.LoadSettings("Highscore").ToString();
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= MainPage_BackRequested;
         }
 
-        private async void MainPage_BackRequested(object sender, BackRequestedEventArgs e)
+        private async void MainPage_BackRequested(object sender, Windows.UI.Core.BackRequestedEventArgs e)
         {
             e.Handled = true;
             var msg = new MessageDialog("Are you handsome?");
@@ -62,7 +63,7 @@ namespace MathsGame
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             if (SimpleMaths.Maths.mode == 0)
-                Frame.Navigate(typeof(View.PlaySingle4_BackRequested));
+                Frame.Navigate(typeof(View.PlaySingle));
             else
                 Frame.Navigate(typeof(View.Advanced));
 

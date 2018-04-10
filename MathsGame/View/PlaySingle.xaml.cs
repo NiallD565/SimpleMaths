@@ -21,10 +21,10 @@ namespace MathsGame.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary> 
-    
-    public sealed partial class PlaySingle4_BackRequested : Page
+
+    public sealed partial class PlaySingle : Page
     {
-        private int staticNumA, staticNumB, staticResult, staticRandomResult, Score=0, State=1, BestScore=0, mode;
+        private int staticNumA, staticNumB, staticResult, staticRandomResult, Score = 0, State = 1, BestScore = 0, mode;
         private DispatcherTimer dispatcherTimer;
 
         private void setupProgressBar()
@@ -84,14 +84,14 @@ namespace MathsGame.View
 
         private void btnTrue_Click(object sender, RoutedEventArgs e)
         {
-            if(mode == 1) // mode - 1 so correct answer is True
+            if (mode == 1) // mode - 1 so correct answer is True
             {
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++Score);
                 txtState.Text = String.Format("{0}", ++State);
                 dispatcherTimer.Stop();
                 dispatcherTimer = null;
                 Playing();
-            } 
+            }
             else
             {
                 dispatcherTimer.Stop();
@@ -114,12 +114,12 @@ namespace MathsGame.View
 
                 mode = rnd.Next(0, 1);// Random Mode show answer if mode = 0 show incorrect answer
 
-                if(mode == 0)
+                if (mode == 0)
                 {
                     txtMath.Text = String.Format("{0} + {1} = {2}", staticNumA, staticNumB, staticRandomResult);
                 }
                 else
-                     txtMath.Text = String.Format("{0} + {1} = {2}", staticNumA, staticNumB, staticResult);
+                    txtMath.Text = String.Format("{0} + {1} = {2}", staticNumA, staticNumB, staticResult);
             }
             if (value == 2)// -
             {
@@ -174,7 +174,7 @@ namespace MathsGame.View
 
         private void btnFalse_Click(object sender, RoutedEventArgs e)
         {
-            if (mode == 0) // mode - 1 so correct answer is True
+            if (mode == 1) // mode - 1 so correct answer is True
             {
                 txtScore.Text = String.Format("Score: {0}".ToUpper(), ++Score);
                 txtState.Text = String.Format("{0}", ++State);

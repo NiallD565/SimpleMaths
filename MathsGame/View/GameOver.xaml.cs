@@ -72,12 +72,12 @@ namespace MathsGame.View
                 Frame.Navigate(typeof(Advanced));
             }
             else
-                Frame.Navigate(typeof(PlaySingle4_BackRequested));
+                Frame.Navigate(typeof(PlaySingle));
         }
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }

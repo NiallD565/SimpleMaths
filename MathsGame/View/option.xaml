@@ -14,6 +14,8 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Margin="5">
                 <TextBlock x:Name="Title" Text="Mode" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="70" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -28,6 +30,11 @@
             </Grid>
             <Grid Grid.Row="3" Margin="5">
                 <Slider x:Name="slider" Minimum="0" Maximum="10" Value="5" ValueChanged="slider_ValueChanged"/>
+            </Grid>
+            <Grid Grid.Row="4" Margin="5">
+                <Button x:Name="btnHome" BorderBrush="White" BorderThickness="4" Margin="0 20 0 0" Background="Green" Content="Home" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="35 10" Foreground="White" FontWeight="ExtraBold" FontSize="30" Click="btnHome_Click"/>
+
             </Grid>
             
         </Grid>
