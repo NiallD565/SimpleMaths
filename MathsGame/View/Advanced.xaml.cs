@@ -83,7 +83,7 @@ namespace MathsGame.View
         private void Playing()
         {
             int numberA = randomValue();
-            int numberB = randomNum.Next(0, numberA - 1);
+            int numberB = randomNum(0, numberA - 1);
             int value = randomValue();
             int result = -1;
 
