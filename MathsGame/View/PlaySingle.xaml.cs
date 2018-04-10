@@ -39,13 +39,15 @@ namespace MathsGame.View
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= PlaySingle_BackRequested;
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PlaySingle_BackRequested;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PlaySingle_BackRequested;
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= PlaySingle_BackRequested;
             dispatcherTimer = null;
+
+            Playing();
         }
 
         private void DispatcherTimer_Tick(object sender, object e)
@@ -172,7 +174,21 @@ namespace MathsGame.View
 
         private void btnFalse_Click(object sender, RoutedEventArgs e)
         {
+            if (mode == 0) // mode - 1 so correct answer is True
+            {
+                txtScore.Text = String.Format("Score: {0}".ToUpper(), ++Score);
+                txtState.Text = String.Format("{0}", ++State);
+                dispatcherTimer.Stop();
+                dispatcherTimer = null;
+                Playing();
+            }
+            else
+            {
+                dispatcherTimer.Stop();
+                dispatcherTimer = null;
 
+                Frame.Navigate(typeof(GameOver), Score.ToString());
+            }
         }
     }
 }

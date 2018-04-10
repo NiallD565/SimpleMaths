@@ -25575,11 +25575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\niall\\source\\repos\\MathsGame\\MathsGame\\MathsGame.csproj",
+      "projectUniqueName": "C:\\Users\\niall\\OneDrive\\Documents\\GitHub\\SimpleMaths\\MathsGame\\MathsGame.csproj",
       "projectName": "MathsGame",
-      "projectPath": "c:\\users\\niall\\source\\repos\\MathsGame\\MathsGame\\MathsGame.csproj",
+      "projectPath": "C:\\Users\\niall\\OneDrive\\Documents\\GitHub\\SimpleMaths\\MathsGame\\MathsGame.csproj",
       "packagesPath": "C:\\Users\\niall\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\niall\\source\\repos\\MathsGame\\MathsGame\\obj\\",
+      "outputPath": "C:\\Users\\niall\\OneDrive\\Documents\\GitHub\\SimpleMaths\\MathsGame\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
