@@ -257,3 +257,4 @@ C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\Vie
 C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\View\PlaySingle.g.cs
 C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\View\PlaySingle.xaml
 C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\View\PlaySingle.xbf
+C:\Users\niall\OneDrive\Documents\GitHub\SimpleMaths\MathsGame\obj\x86\Debug\MathsGame.csprojResolveAssemblyReference.cache
